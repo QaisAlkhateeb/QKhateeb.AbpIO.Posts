@@ -1,0 +1,5 @@
+@startuml
+!include .\\code.puml
+!include .\\menu_code.puml
+!include .\\settings_code.puml
+@enduml

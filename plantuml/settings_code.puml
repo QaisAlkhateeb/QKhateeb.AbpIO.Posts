@@ -1,0 +1,27 @@
+@startuml
+class SettingPageContributorManager {
+    + SettingPageContributorManager(serviceProvider:IServiceProvider)
+    + ConfigureAsync() : Task<SettingPageCreationContext>
+}
+class SettingManagementPageOptions {
+    + SettingManagementPageOptions()
+}
+class SettingPageCreationContext {
+    + Groups : List<SettingPageGroup>
+    + SettingPageCreationContext(serviceProvider:IServiceProvider)
+}
+class SettingManagementPageOptions {
+    + SettingManagementPageOptions()
+}
+abstract class SettingPageContributorBase {
+    + <<virtual>> GetRequiredPermissions() : IReadOnlySet<string>
+    + <<virtual>> GetRequiredFeatures(multiTenancySides:MultiTenancySides?) : IReadOnlySet<string>
+    + {abstract} ConfigureAsync(context:SettingPageCreationContext) : Task
+    + <<virtual>> CheckPermissionsAsync(context:SettingPageCreationContext) : Task<bool>
+}
+SettingManagementPageOptions *-- "many" ISettingPageContributor : "has"
+ISettingPageContributor <|-- SettingPageContributorBase
+SettingPageContributorManager *-- SettingManagementPageOptions : "use"
+SettingPageContributorManager --> SettingPageCreationContext : "create"
+Consumer --> SettingPageCreationContext : "use"
+@enduml

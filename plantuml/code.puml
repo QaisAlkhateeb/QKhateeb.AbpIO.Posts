@@ -1,0 +1,24 @@
+@startuml
+class ComponentContext {
+    + ComponentModel : ComponentModel
+    + ComponentContext(serviceProvider:IServiceProvider)
+}
+interface IComponentContributor {
+    + ConfigureAsync(ComponentContext:ComponentContext)
+}
+class ComponentOptions {
+    + Contributors : List<IComponentContributor>
+}
+class ComponentContributorManager {
+    + ComponentContributorManager(serviceProvider:IServiceProvider, options:IOptions<ComponentOptions>)
+    + GetComponentModelAsync() : Task<ComponentModel>
+    # ComponentOptions : ComponentOptions
+    # ConfigureAsync() : Task<ComponentContext>
+}
+ComponentContext --> ComponentModel : "manage" 
+ComponentOptions *-- "many" IComponentContributor : "has"
+ComponentContributorManager *-- ComponentOptions : "use"
+ComponentContributorManager --> ComponentContext : "create"
+Consumer --> ComponentModel : "use"
+IComponentContributor --> ComponentContext : "configure"
+@enduml

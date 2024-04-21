@@ -1,0 +1,21 @@
+@startuml
+interface IMenuContributor {
+    + ConfigureMenuAsync(context:MenuConfigurationContext) : Task
+}
+interface IMenuManager {
+    + GetAsync(name:string) : Task<ApplicationMenu>
+    + GetMainMenuAsync() : Task<ApplicationMenu>
+}
+interface IMenuConfigurationContext {
+}
+class AbpNavigationOptions {
+    + AbpNavigationOptions()
+}
+IMenuConfigurationContext --> "Menu" ApplicationMenu
+IMenuConfigurationContext --> "AuthorizationService" IAuthorizationService
+IMenuConfigurationContext --> "StringLocalizerFactory" IStringLocalizerFactory
+AbpNavigationOptions *--  "many" IMenuContributor : "has"
+IMenuManager *-- AbpNavigationOptions : "use"
+IMenuManager --> IMenuConfigurationContext : "create"
+Consumer --> IMenuManager : "use"
+@enduml

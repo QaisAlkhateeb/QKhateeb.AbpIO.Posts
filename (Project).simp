@@ -1,0 +1,1039 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<sim-project version="14.30" multi-file="no" uid="simp0e860a76513a46009ec93a6146f594dc" creation-date="04/18/2024 13:28:03">
+  <meta>
+    <name>(Project)</name>
+    <authors>Qais Alkhateeb</authors>
+    <description />
+  </meta>
+  <counters documents="1" models="10">
+    <entity-names>
+      <counter>
+        <item-type type-id="class" type="Class" />
+        <value>2</value>
+      </counter>
+    </entity-names>
+    <entity-ids>
+      <counter>
+        <item-type type-id="package" type="Package" />
+        <value>12</value>
+      </counter>
+      <counter>
+        <item-type type-id="universal-connector" type="Universal Connector" />
+        <value>6</value>
+      </counter>
+      <counter>
+        <item-type type-id="comment-connector" type="Comment Connector" />
+        <value>3</value>
+      </counter>
+      <counter>
+        <item-type type-id="relationship" type="Association" />
+        <value>4</value>
+      </counter>
+      <counter>
+        <item-type type-id="property" type="Property" />
+        <value>15</value>
+      </counter>
+      <counter>
+        <item-type type-id="constraint" type="Constraint" />
+        <value>5</value>
+      </counter>
+      <counter>
+        <item-type type-id="class" type="Class" />
+        <value>6</value>
+      </counter>
+      <counter>
+        <item-type type-id="template-parameter" type="Template Parameter" />
+        <value>4</value>
+      </counter>
+      <counter>
+        <item-type type-id="dependency" type="Dependency" />
+        <value>2</value>
+      </counter>
+      <counter>
+        <item-type type-id="containment" type="Containment" />
+        <value>25</value>
+      </counter>
+      <counter>
+        <item-type type-id="uml-n-ary-association" type="N-ary Association" />
+        <value>2</value>
+      </counter>
+    </entity-ids>
+    <diagrams>
+      <counter>
+        <type>SoftwareIdeasModeler.Core.Diagrams.UmlDiagrams.UmlPackageDiagram</type>
+        <value>4</value>
+      </counter>
+      <counter>
+        <type>SoftwareIdeasModeler.Core.Diagrams.UmlDiagrams.UmlClassDiagram</type>
+        <value>9</value>
+      </counter>
+    </diagrams>
+    <fields>
+      <counter>
+        <type>SoftwareIdeasModeler.Core.DiagramItems.Fields.OperationField</type>
+        <value>4</value>
+      </counter>
+    </fields>
+  </counters>
+  <alias-groups />
+  <management uid="md-48523a59fa4a4d1692954e9dfc49191c" name="" task-id-sequence="0">
+    <persons>
+      <person id="">
+        <first-name>Qais</first-name>
+        <last-name>Alkhateeb</last-name>
+        <role />
+        <e-mail />
+        <phone-number />
+        <description />
+        <color>#00000000</color>
+      </person>
+    </persons>
+    <teams />
+    <sprints />
+    <projects />
+    <modules />
+    <tasks />
+    <to-dos />
+  </management>
+  <glossary id="glsr-2a01f48a3c0749a5976bbf2f2b8de341" name="" order-index="-1" />
+  <types default="UML">
+    <type-sets>
+      <type-set file="UmlTypes.xml" />
+    </type-sets>
+    <custom-types>
+      <parameters />
+      <types>
+        <type id="IStringLocalizer" name="IStringLocalizer" />
+        <type id="Class:72d2098b69164f77a3aa96c82a34e614" name="AbpNavigationOptions" class-ref="72d2098b69164f77a3aa96c82a34e614" />
+        <type id="ComponentModel" name="ComponentModel" />
+        <type id="IOptions&lt;ComponentOptions&gt;" name="IOptions&lt;ComponentOptions&gt;" />
+        <type id="Class:ddc998ca4f604a04b05b40792c9efee0" name="ComponentContextBase" class-ref="ddc998ca4f604a04b05b40792c9efee0" />
+        <type id="Task&lt;ApplicationMenu&gt;" name="Task&lt;ApplicationMenu&gt;" base-ref="Task">
+          <template-parameter ref="ApplicationMenu" />
+        </type>
+        <type id="IServiceScopeFactory" name="IServiceScopeFactory" />
+        <type id="Task" name="Task" />
+        <type id="CSharp.List_CSharp.string" tid="array" name="List&lt;string&gt;" template="{{Name}}&lt;{{?}}&gt;" base-ref="CSharp.List">
+          <template-parameter ref="CSharp.string" />
+          <template-parameter ref="CSharp.string" />
+        </type>
+        <type id="List&lt;IComponentContributer&gt;" name="List&lt;IComponentContributer&gt;" />
+        <type id="Class:e32cb5c12d4d4c73a7e3c5f360e52fbb" name="ComponentOptions" class-ref="e32cb5c12d4d4c73a7e3c5f360e52fbb" />
+        <type id="IServiceProvider" name="IServiceProvider" />
+        <type id="List&lt;IComponentContributor&gt;" name="List&lt;IComponentContributor&gt;" />
+        <type id="ISimpleStateCheckerManager&lt;ApplicationMenuItem&gt;" name="ISimpleStateCheckerManager&lt;ApplicationMenuItem&gt;" base-ref="ISimpleStateCheckerManager">
+          <template-parameter ref="ApplicationMenuItem" />
+        </type>
+        <type id="ApplicationMenu" name="ApplicationMenu" />
+        <type id="IAbpLazyServiceProvider" name="IAbpLazyServiceProvider" />
+        <type id="CSharp.List_IComponentContributer" tid="array" name="List&lt;IComponentContributer&gt;" template="{{Name}}&lt;{{?}}&gt;" base-ref="CSharp.List">
+          <template-parameter ref="IComponentContributer" />
+          <template-parameter ref="IComponentContributer" />
+        </type>
+        <type id="IAuthorizationService" name="IAuthorizationService" />
+        <type id="CSharp.List_IMenuContributor" tid="array" name="List&lt;IMenuContributor&gt;" template="{{Name}}&lt;{{?}}&gt;" base-ref="CSharp.List">
+          <template-parameter ref="IMenuContributor" />
+          <template-parameter ref="IMenuContributor" />
+        </type>
+        <type id="IStringLocalizerFactory" name="IStringLocalizerFactory" />
+      </types>
+    </custom-types>
+  </types>
+  <items>
+    <item id="68c15837483d49858bde2462fa74192d" cid="PROP002" type="property" owner="6e7463d40b504eba8c3ec747e151c600" creator="" creation-date="04/18/2024 13:41:52" visibility="private" />
+    <item id="960575f4e32d41c4a12d9e783c8572ee" cid="PROP001" type="property" owner="6e7463d40b504eba8c3ec747e151c600" creator="" creation-date="04/18/2024 13:41:52" visibility="private">
+      <structural-feature multiplicity="1..*" type="ComponentOptions" type-id="Class:e32cb5c12d4d4c73a7e3c5f360e52fbb" />
+      <property aggregation="composite" />
+    </item>
+  </items>
+  <models>
+    <model id="pd4b0b29e6bbb4f709b71dffafca81e9f_145718825" name="Model1" namespace="" order-index="1" expanded="true">
+      <meta>
+        <authors>
+          <author>Qais Alkhateeb</author>
+        </authors>
+        <description />
+        <creation-date>04/18/2024 13:28:04</creation-date>
+        <change-date>01/01/0001 00:00:00</change-date>
+        <revision-count>0</revision-count>
+        <version />
+      </meta>
+      <abstract-items>
+        <item id="72dadc07eae548b9bcf88b52cb0d089a" cid="CNT019" type="containment" creator="" creation-date="04/18/2024 15:14:24" from="c650b43040bd44588b036e3cf6e7d6c8" to="9f91382c337442fb81cabf089ffce49c" />
+        <item id="923d5cc6b5ee458a81fee818df14fb72" cid="CNT015" type="containment" creator="" creation-date="04/18/2024 15:11:57" from="17f0eb1451954c138f5769cf7055ac67" to="babba4aa9fd848a29bf96931a58c498f" />
+        <item id="574dbe8c801849d9b622e88bc33b8d35" cid="CNT020" type="containment" creator="" creation-date="04/18/2024 15:14:24" from="1f456c6d3ba648f9a664ab6fa342ed53" to="c650b43040bd44588b036e3cf6e7d6c8" />
+        <item id="fe1eaca3d6d44c73b7f4383ca146fe6c" cid="I001" type="uml-interface-classifier" name="IMenuContributor" change-tracking-state="changed" creation-date="04/18/2024 15:11:14" visibility="public">
+          <stereotypes>
+            <stereotype name="interface" />
+          </stereotypes>
+          <tagged-values>
+            <tagged-value id="tv504ada333566487db4df8d92d5ecc844" name="namespace" type="text" multiple="false" hidden="false" value="Volo.Abp.UI.Navigation" />
+            <tagged-value id="tv3b8f0e278d214547b7db766395ff72f9" name="ReverseEngineered" type="text" multiple="false" hidden="true" value="IMenuContributor" />
+            <tagged-value id="tva3a323148a75490d98a28795691052af" name="SourceCodeGroup" type="reference" multiple="false" hidden="true" ref="pd4b0b29e6bbb4f709b71dffafca81e9f_145718825" />
+            <tagged-value id="tv8dcae5901ae840b0a4e0845cd7699b39" name="SourceCodePath" type="text" multiple="false" hidden="true" value="C:\Users\DELL\Downloads\IMenuContributor.cs" />
+            <tagged-value id="tv25b8177e3a00419280f375e94cb839a0" name="SourceCodeLanguage" type="text" multiple="false" hidden="true" value="CSharp" />
+            <tagged-value id="tv838eed39039746a5bf69f9aa27e4af2c" name="SourceCodePosition" type="text" multiple="false" hidden="true" value="66" />
+            <tagged-value id="tvd7153dc2938b47e3b47987edaf3bb789" name="SourceCodeLength" type="text" multiple="false" hidden="true" value="100" />
+            <tagged-value id="tv5e0bb265dbda4dfeaa7dbe6e0da7fd1e" name="SourceCodeFileSize" type="text" multiple="false" hidden="true" value="167" />
+            <tagged-value id="tv026db26420aa4f798c9cfdacfd6c5480" name="SourceCodeFileChangeDate" type="text" multiple="false" hidden="true" value="04/18/2024 12:04:45" />
+          </tagged-values>
+          <stereotype-instances>
+            <stereotype id="fe1eaca3d6d44c73b7f4383ca146fe6c_interface_c" type="interface" creation-date="04/18/2024 15:11:14" ref="" />
+          </stereotype-instances>
+          <operations>
+            <operation id="oaaa1d677aa2d47b5b0eeb72a59f04f0d249" cid="OP002" name="ConfigureMenuAsync" creation-date="04/18/2024 15:11:14" type="Task" type-id="Task" visibility="undefined">
+              <parameters>
+                <parameter id="pd5d5ac460ff345c1a0dd59a7feff5167" name="context" type="MenuConfigurationContext" type-id="MenuConfigurationContext" creation-date="04/18/2024 15:11:14" />
+              </parameters>
+              <tagged-values>
+                <tagged-value id="tv05ec299ee6e743d2ba2edf80f3fc7a20" name="ReverseEngineered" type="text" multiple="false" hidden="true" value="ConfigureMenuAsync" />
+                <tagged-value id="tv2e3053b5935849d1babe6064df1033f5" name="SourceCodePath" type="text" multiple="false" hidden="true" value="C:\Users\DELL\Downloads\IMenuContributor.cs" />
+                <tagged-value id="tv8eeb26eb16054495a33283a54b2fdaf9" name="SourceCodeLanguage" type="text" multiple="false" hidden="true" value="CSharp" />
+                <tagged-value id="tv9c6b1334a8444bb0802b72c85088f676" name="SourceCodePosition" type="text" multiple="false" hidden="true" value="106" />
+                <tagged-value id="tvb3d11bed74ed434a8f6aa52f3712e0b2" name="SourceCodeLength" type="text" multiple="false" hidden="true" value="58" />
+              </tagged-values>
+            </operation>
+          </operations>
+          <previous-state>
+            <item id="8647c11fb2b6418a838c66804ecf0bb6" veid="fe1eaca3d6d44c73b7f4383ca146fe6c" cid="I001" type="uml-interface-classifier" name="IMenuContributor" change-tracking-state="changed" creation-date="04/18/2024 15:11:14" visibility="public">
+              <stereotypes>
+                <stereotype name="interface" />
+              </stereotypes>
+              <tagged-values>
+                <tagged-value id="649876744b944e228e38e5900ce2d1d7" veid="tv504ada333566487db4df8d92d5ecc844" name="namespace" type="text" multiple="false" hidden="false" value="Volo.Abp.UI.Navigation" />
+                <tagged-value id="911b4adeaa0d4b429e0cce5fdf44d2e2" veid="tv3b8f0e278d214547b7db766395ff72f9" name="ReverseEngineered" type="text" multiple="false" hidden="true" value="IMenuContributor" />
+                <tagged-value id="89b4f9cd3e6d45b7a5da151ca13e1de0" veid="tva3a323148a75490d98a28795691052af" name="SourceCodeGroup" type="reference" multiple="false" hidden="true" ref="9dc61b4a57934cabbf7dcf7416bc645d" />
+                <tagged-value id="f7c92a50264a49cbaa8b81850ffdfa97" veid="tv8dcae5901ae840b0a4e0845cd7699b39" name="SourceCodePath" type="text" multiple="false" hidden="true" value="C:\Users\DELL\Downloads\IMenuContributor.cs" />
+                <tagged-value id="0cd54eba0bd34b2facd27906fb18ae8b" veid="tv25b8177e3a00419280f375e94cb839a0" name="SourceCodeLanguage" type="text" multiple="false" hidden="true" value="CSharp" />
+                <tagged-value id="962a7c19fa944cd9a0ee165ae85810e6" veid="tv838eed39039746a5bf69f9aa27e4af2c" name="SourceCodePosition" type="text" multiple="false" hidden="true" value="66" />
+                <tagged-value id="f4e3cc21c66d4ce6ab7033d5b4c19b84" veid="tvd7153dc2938b47e3b47987edaf3bb789" name="SourceCodeLength" type="text" multiple="false" hidden="true" value="100" />
+                <tagged-value id="05dcdfde524844dda2838c6d079a928c" veid="tv5e0bb265dbda4dfeaa7dbe6e0da7fd1e" name="SourceCodeFileSize" type="text" multiple="false" hidden="true" value="167" />
+                <tagged-value id="aa82587ea7934dfda3dd99b6f3eba5c3" veid="tv026db26420aa4f798c9cfdacfd6c5480" name="SourceCodeFileChangeDate" type="text" multiple="false" hidden="true" value="04/18/2024 12:04:45" />
+              </tagged-values>
+              <stereotype-instances>
+                <stereotype id="428930b36dbd4c70b61e75196324deb7" veid="fe1eaca3d6d44c73b7f4383ca146fe6c_interface_c" type="interface" creation-date="04/18/2024 15:11:14" ref="" />
+              </stereotype-instances>
+              <operations>
+                <operation id="afff85a15191491590dc92e436b08be9" cid="OP002" veid="oaaa1d677aa2d47b5b0eeb72a59f04f0d249" name="ConfigureMenuAsync" creation-date="04/18/2024 15:11:14" type="Task" type-id="Task" visibility="undefined">
+                  <parameters>
+                    <parameter id="pd5d5ac460ff345c1a0dd59a7feff5167" name="context" type="MenuConfigurationContext" type-id="MenuConfigurationContext" creation-date="04/18/2024 15:11:14" />
+                  </parameters>
+                  <tagged-values>
+                    <tagged-value id="cd5c7867ae8d40eb83274cc42431bbbf" veid="tv05ec299ee6e743d2ba2edf80f3fc7a20" name="ReverseEngineered" type="text" multiple="false" hidden="true" value="ConfigureMenuAsync" />
+                    <tagged-value id="5a8d4a11a6e148a796ba366d67498d1e" veid="tv2e3053b5935849d1babe6064df1033f5" name="SourceCodePath" type="text" multiple="false" hidden="true" value="C:\Users\DELL\Downloads\IMenuContributor.cs" />
+                    <tagged-value id="9bfe0f7bbd9040ea905f7b9c6eadd1c2" veid="tv8eeb26eb16054495a33283a54b2fdaf9" name="SourceCodeLanguage" type="text" multiple="false" hidden="true" value="CSharp" />
+                    <tagged-value id="fd2d7a4cc13b4890b0a2a81b51a1d527" veid="tv9c6b1334a8444bb0802b72c85088f676" name="SourceCodePosition" type="text" multiple="false" hidden="true" value="106" />
+                    <tagged-value id="a4113ad037cb4a019414fa596db6561d" veid="tvb3d11bed74ed434a8f6aa52f3712e0b2" name="SourceCodeLength" type="text" multiple="false" hidden="true" value="58" />
+                  </tagged-values>
+                </operation>
+              </operations>
+            </item>
+          </previous-state>
+        </item>
+        <item id="2c634892f6f34b368aaa46af5e4cc7f8" cid="PKG009" type="package" name="Navigation" creator="" creation-date="04/18/2024 15:14:24">
+          <tagged-values>
+            <tagged-value id="tv199fa47eab2b483ea276eba2d46635e8" name="namespace" type="text" multiple="false" hidden="false" value="Volo.Abp.UI.Navigation" />
+            <tagged-value id="tvbf3e85d62ef143bb9a5be5f81c402fba" name="ReverseEngineered" type="text" multiple="false" hidden="true" value="Navigation" />
+          </tagged-values>
+        </item>
+        <item id="1f456c6d3ba648f9a664ab6fa342ed53" cid="PKG008" type="package" name="UI" creator="" creation-date="04/18/2024 15:14:24">
+          <tagged-values>
+            <tagged-value id="tved27de319391423cbb58c9f9b6c05e17" name="namespace" type="text" multiple="false" hidden="false" value="Volo.Abp.UI" />
+            <tagged-value id="tv02b285e020c04e8c8ef3757552470be2" name="ReverseEngineered" type="text" multiple="false" hidden="true" value="UI" />
+          </tagged-values>
+        </item>
+        <item id="bc542af521cc43febe423c9ab299bee2" cid="CNT014" type="containment" creator="" creation-date="04/18/2024 15:11:57" from="babba4aa9fd848a29bf96931a58c498f" to="b2a99c7bd47640f0b854783a5b17c0c0" />
+        <item id="9f91382c337442fb81cabf089ffce49c" cid="PKG006" type="package" name="Volo" creator="" creation-date="04/18/2024 15:14:24">
+          <tagged-values>
+            <tagged-value id="tvf5bacae06d79474a916888331a7d2e07" name="namespace" type="text" multiple="false" hidden="false" value="Volo" />
+            <tagged-value id="tve77c5c0f05ff48d0ab1a558f6b4a6a39" name="ReverseEngineered" type="text" multiple="false" hidden="true" value="Volo" />
+          </tagged-values>
+        </item>
+        <item id="72bc9ee391a942118cb41d920f4d3ee8" cid="CNT024" type="containment" creator="" creation-date="04/18/2024 15:14:53" from="2c634892f6f34b368aaa46af5e4cc7f8" to="1f456c6d3ba648f9a664ab6fa342ed53" />
+        <item id="9fd6904b170346a9aa432bb7eec661c5" cid="CNT021" type="containment" creator="" creation-date="04/18/2024 15:14:24" from="2c634892f6f34b368aaa46af5e4cc7f8" to="1f456c6d3ba648f9a664ab6fa342ed53" />
+        <item id="c650b43040bd44588b036e3cf6e7d6c8" cid="PKG007" type="package" name="Abp" creator="" creation-date="04/18/2024 15:14:24">
+          <tagged-values>
+            <tagged-value id="tv3db5424c3af540a784d90637c53a6e81" name="namespace" type="text" multiple="false" hidden="false" value="Volo.Abp" />
+            <tagged-value id="tvc7f2baa81339463381b8b80020991099" name="ReverseEngineered" type="text" multiple="false" hidden="true" value="Abp" />
+          </tagged-values>
+        </item>
+        <item id="ea428dbc24d84097866c7747cb7fe090" cid="PKG011" type="package" creator="" creation-date="04/18/2024 15:19:22">
+          <tagged-values>
+            <tagged-value id="tv8e434ea18fdc4f6c8efd3db067b437a2" name="namespace" type="text" multiple="false" hidden="false" value="" />
+            <tagged-value id="tvfd930f9a7df24abeba80d97680d397a0" name="ReverseEngineered" type="text" multiple="false" hidden="true" value="" />
+          </tagged-values>
+        </item>
+        <item id="68b665eb5816499f98be1ab9077334d3" cid="CNT013" type="containment" creator="" creation-date="04/18/2024 15:11:57" from="b2a99c7bd47640f0b854783a5b17c0c0" to="7af816e7a0274803b6855c42b23ebbca" />
+        <item id="4397f22296c6438f9644cd2d81829c3e" cid="CNT022" type="containment" creator="" creation-date="04/18/2024 15:14:53" from="c650b43040bd44588b036e3cf6e7d6c8" to="9f91382c337442fb81cabf089ffce49c" />
+        <item id="df950acac58e485fb0082cd5458b34f5" cid="CNT023" type="containment" creator="" creation-date="04/18/2024 15:14:53" from="1f456c6d3ba648f9a664ab6fa342ed53" to="c650b43040bd44588b036e3cf6e7d6c8" />
+      </abstract-items>
+      <sub-models>
+        <model id="p49a366e72aa24defb6a85797a6023f27_651847062" name="" namespace="" order-index="2" expanded="true">
+          <meta>
+            <authors>
+              <author>Qais Alkhateeb</author>
+            </authors>
+            <description />
+            <creation-date>04/18/2024 13:28:26</creation-date>
+            <change-date>01/01/0001 00:00:00</change-date>
+            <revision-count>0</revision-count>
+            <version />
+          </meta>
+          <tagged-values>
+            <tagged-value id="tvb653f26dc383479f9cc17e4ac645e75d" name="ReverseEngineered" type="text" multiple="false" hidden="true" value="" />
+          </tagged-values>
+          <abstract-items>
+            <item id="de2e9c05b48749e39a12c2ca258ed8bf" cid="PROP002" type="property" name="AuthorizationService" owner="572bd7da98284b8883f3a5dd65823a75" change-tracking-state="changed" creation-date="04/18/2024 15:18:56" visibility="undefined">
+              <stereotypes>
+                <stereotype name="property" />
+              </stereotypes>
+              <tagged-values>
+                <tagged-value id="tv4e32836f7fae4e24985a2919fa524510" name="ReverseEngineered" type="text" multiple="false" hidden="true" value="AuthorizationService" />
+                <tagged-value id="tvcbf0571385c04800be9a378a9686c60d" name="SourceCodeGroup" type="reference" multiple="false" hidden="true" ref="pd4b0b29e6bbb4f709b71dffafca81e9f_145718825" />
+                <tagged-value id="tv2c622866012a44869cc1e410b57012c2" name="SourceCodePath" type="text" multiple="false" hidden="true" value="D:\Documents\ContributorPattern\menu_code.cs" />
+                <tagged-value id="tv6ab94a578dc945f491e35f64c50a9ca2" name="SourceCodeLanguage" type="text" multiple="false" hidden="true" value="CSharp" />
+                <tagged-value id="tv681612f2f8a54505a239490ae867401c" name="SourceCodePosition" type="text" multiple="false" hidden="true" value="360" />
+                <tagged-value id="tv71b2a0a0dee247b4ab189afd38ae4ed8" name="SourceCodeLength" type="text" multiple="false" hidden="true" value="51" />
+                <tagged-value id="tva48754ff3d7f4941a6a7cc3f8332303a" name="SourceCodeFileSize" type="text" multiple="false" hidden="true" value="974" />
+                <tagged-value id="tvba58952e8ee449648159182553ad7859" name="SourceCodeFileChangeDate" type="text" multiple="false" hidden="true" value="04/18/2024 12:18:13" />
+              </tagged-values>
+              <stereotype-instances>
+                <stereotype id="de2e9c05b48749e39a12c2ca258ed8bf_property_c" type="property" creation-date="04/18/2024 15:18:56" ref="" />
+              </stereotype-instances>
+              <structural-feature type="IAuthorizationService" type-id="IAuthorizationService" />
+              <previous-state>
+                <item id="e9cad59c14554608955f233d310c42d4" veid="de2e9c05b48749e39a12c2ca258ed8bf" cid="PROP002" type="property" name="AuthorizationService" creation-date="04/18/2024 15:18:56" visibility="undefined">
+                  <stereotypes>
+                    <stereotype name="property" />
+                  </stereotypes>
+                  <tagged-values>
+                    <tagged-value id="b3999049751048a497d35b37d3c701e3" veid="tv4e32836f7fae4e24985a2919fa524510" name="ReverseEngineered" type="text" multiple="false" hidden="true" value="AuthorizationService" />
+                    <tagged-value id="37024279e0f2442db850a8177d6643ec" veid="tvcbf0571385c04800be9a378a9686c60d" name="SourceCodeGroup" type="reference" multiple="false" hidden="true" ref="a812628f38484b58b47cde16987ff06b" />
+                    <tagged-value id="a236361aadc249739de8729a1336effb" veid="tv2c622866012a44869cc1e410b57012c2" name="SourceCodePath" type="text" multiple="false" hidden="true" value="D:\Documents\ContributorPattern\menu_code.cs" />
+                    <tagged-value id="def808f732e1409eb5c6e6020159561f" veid="tv6ab94a578dc945f491e35f64c50a9ca2" name="SourceCodeLanguage" type="text" multiple="false" hidden="true" value="CSharp" />
+                    <tagged-value id="ec82bfcabe164c0590a15c1561054ada" veid="tv681612f2f8a54505a239490ae867401c" name="SourceCodePosition" type="text" multiple="false" hidden="true" value="360" />
+                    <tagged-value id="b0b64618150147f3b6ce71573a1b792c" veid="tv71b2a0a0dee247b4ab189afd38ae4ed8" name="SourceCodeLength" type="text" multiple="false" hidden="true" value="51" />
+                    <tagged-value id="84076edc281a4dad92bfbb7de556d3d8" veid="tva48754ff3d7f4941a6a7cc3f8332303a" name="SourceCodeFileSize" type="text" multiple="false" hidden="true" value="974" />
+                    <tagged-value id="4150555c21c64944a9170a01ff2b57d6" veid="tvba58952e8ee449648159182553ad7859" name="SourceCodeFileChangeDate" type="text" multiple="false" hidden="true" value="04/18/2024 12:18:13" />
+                  </tagged-values>
+                  <stereotype-instances>
+                    <stereotype id="3306b9efa76c4c41899d3ffb6045b94c" veid="de2e9c05b48749e39a12c2ca258ed8bf_property_c" type="property" creation-date="04/18/2024 15:18:56" ref="" />
+                  </stereotype-instances>
+                  <structural-feature type="IAuthorizationService" type-id="IAuthorizationService" />
+                </item>
+              </previous-state>
+            </item>
+            <item id="da1a274d9573446b9262ebd0c91ee938" cid="PROP004" type="property" name="MenuContributors" owner="46c125d5233844bc8c0ab4cc00bc3292" change-tracking-state="changed" creation-date="04/18/2024 15:18:56" visibility="public">
+              <stereotypes>
+                <stereotype name="property" />
+              </stereotypes>
+              <tagged-values>
+                <tagged-value id="tvc8b7468a37a54b2680b54bc926227e33" name="ReverseEngineered" type="text" multiple="false" hidden="true" value="MenuContributors" />
+                <tagged-value id="tv5a5b1506763247caa271bc904275d57a" name="SourceCodeGroup" type="reference" multiple="false" hidden="true" ref="pd4b0b29e6bbb4f709b71dffafca81e9f_145718825" />
+                <tagged-value id="tv3eede5f41d1e4408a94f863a1cf8aa98" name="SourceCodePath" type="text" multiple="false" hidden="true" value="D:\Documents\ContributorPattern\menu_code.cs" />
+                <tagged-value id="tvd8836f4386344fa8932b6bd0c2299662" name="SourceCodeLanguage" type="text" multiple="false" hidden="true" value="CSharp" />
+                <tagged-value id="tv371c9ccf5e14478e817d144c4d527d18" name="SourceCodePosition" type="text" multiple="false" hidden="true" value="538" />
+                <tagged-value id="tv1447146ff4bf41eeb1d70c549cd8d8d5" name="SourceCodeLength" type="text" multiple="false" hidden="true" value="55" />
+                <tagged-value id="tv2bbb22891cee401586eb9abbf468a384" name="SourceCodeFileSize" type="text" multiple="false" hidden="true" value="974" />
+                <tagged-value id="tv7bd3f8bb756048bebed09db84b8334eb" name="SourceCodeFileChangeDate" type="text" multiple="false" hidden="true" value="04/18/2024 12:18:13" />
+                <tagged-value id="tv0174a355de1b449aa847839189daaeda" name="Annotation" type="text" multiple="false" hidden="false" value="NotNull" />
+              </tagged-values>
+              <stereotype-instances>
+                <stereotype id="da1a274d9573446b9262ebd0c91ee938_property_c" type="property" creation-date="04/18/2024 15:18:56" ref="" />
+              </stereotype-instances>
+              <structural-feature type="List&lt;IMenuContributor&gt;" type-id="CSharp.List_IMenuContributor" />
+              <previous-state>
+                <item id="6d3ba6cdd0b6417c8aeea677d7be5081" veid="da1a274d9573446b9262ebd0c91ee938" cid="PROP004" type="property" name="MenuContributors" creation-date="04/18/2024 15:18:56" visibility="public">
+                  <stereotypes>
+                    <stereotype name="property" />
+                  </stereotypes>
+                  <tagged-values>
+                    <tagged-value id="688e90bac38d4250984f979b93f73d87" veid="tvc8b7468a37a54b2680b54bc926227e33" name="ReverseEngineered" type="text" multiple="false" hidden="true" value="MenuContributors" />
+                    <tagged-value id="44a9de1f04914e1192ae4ae786e282db" veid="tv5a5b1506763247caa271bc904275d57a" name="SourceCodeGroup" type="reference" multiple="false" hidden="true" ref="141ed5dacbb440649fe1aab7606ae32a" />
+                    <tagged-value id="d0024aa430ec4c48b079eeb88d0233d9" veid="tv3eede5f41d1e4408a94f863a1cf8aa98" name="SourceCodePath" type="text" multiple="false" hidden="true" value="D:\Documents\ContributorPattern\menu_code.cs" />
+                    <tagged-value id="3623bd70d37b4e8e836868c5c14c819d" veid="tvd8836f4386344fa8932b6bd0c2299662" name="SourceCodeLanguage" type="text" multiple="false" hidden="true" value="CSharp" />
+                    <tagged-value id="f2f01d37024a42e299f45601cd6bd237" veid="tv371c9ccf5e14478e817d144c4d527d18" name="SourceCodePosition" type="text" multiple="false" hidden="true" value="538" />
+                    <tagged-value id="0766f4ba00744af3a72936e2a67f326e" veid="tv1447146ff4bf41eeb1d70c549cd8d8d5" name="SourceCodeLength" type="text" multiple="false" hidden="true" value="55" />
+                    <tagged-value id="ee37ed505f2e4a92ad92576f1fa5241a" veid="tv2bbb22891cee401586eb9abbf468a384" name="SourceCodeFileSize" type="text" multiple="false" hidden="true" value="974" />
+                    <tagged-value id="c4332962d8544c7392232bd94d17cf89" veid="tv7bd3f8bb756048bebed09db84b8334eb" name="SourceCodeFileChangeDate" type="text" multiple="false" hidden="true" value="04/18/2024 12:18:13" />
+                    <tagged-value id="0614b2fa6aea4452a4a01feef55538ea" veid="tv0174a355de1b449aa847839189daaeda" name="Annotation" type="text" multiple="false" hidden="false" value="NotNull" />
+                  </tagged-values>
+                  <stereotype-instances>
+                    <stereotype id="b2efbab3bd7c43d58fbe5e24f726fa9c" veid="da1a274d9573446b9262ebd0c91ee938_property_c" type="property" creation-date="04/18/2024 15:18:56" ref="" />
+                  </stereotype-instances>
+                  <structural-feature type="List&lt;IMenuContributor&gt;" type-id="CSharp.List_IMenuContributor" />
+                </item>
+              </previous-state>
+            </item>
+            <item id="8aebe0baaf9b4da3a0fc8e048b049b8a" cid="PROP001" type="property" name="ServiceProvider" owner="ddc998ca4f604a04b05b40792c9efee0" creation-date="04/18/2024 13:28:26" visibility="public">
+              <tagged-values>
+                <tagged-value id="tv7c9c75b4a89245899531b356bb5ac8c9" name="ReverseEngineered" type="text" multiple="false" hidden="true" value="ServiceProvider" />
+                <tagged-value id="tve7c0660296ac4af8b6f621b1eb0c3568" name="SourceCodeGroup" type="reference" multiple="false" hidden="true" ref="pd4b0b29e6bbb4f709b71dffafca81e9f_145718825" />
+                <tagged-value id="tve87b2a6a329e4fe29ab20e9042e4bb20" name="SourceCodePath" type="text" multiple="false" hidden="true" value="D:\Documents\ContributorPattern\code.cs" />
+                <tagged-value id="tv900770d8daca408d87a3aa8c7cb4bbd5" name="SourceCodeLanguage" type="text" multiple="false" hidden="true" value="CSharp" />
+                <tagged-value id="tva09db582cb7a4f41812b4008bd535fbf" name="SourceCodePosition" type="text" multiple="false" hidden="true" value="434" />
+                <tagged-value id="tv1bed4109f2774711b627c27d986f5cdf" name="SourceCodeLength" type="text" multiple="false" hidden="true" value="48" />
+                <tagged-value id="tvf2e3699d4ec74cb9bda468c9cd15f7fb" name="SourceCodeFileSize" type="text" multiple="false" hidden="true" value="2034" />
+                <tagged-value id="tvfa032f3041fd4059801c994bb59c4236" name="SourceCodeFileChangeDate" type="text" multiple="false" hidden="true" value="04/18/2024 10:19:10" />
+              </tagged-values>
+              <structural-feature type="IServiceProvider" type-id="IServiceProvider" />
+            </item>
+            <item id="7a006f1e54b040d389469f0b0787409a" cid="PROP003" type="property" name="StringLocalizerFactory" owner="572bd7da98284b8883f3a5dd65823a75" change-tracking-state="changed" creation-date="04/18/2024 15:18:56" visibility="undefined">
+              <stereotypes>
+                <stereotype name="property" />
+              </stereotypes>
+              <tagged-values>
+                <tagged-value id="tvc43557eb052a41b9aa248bd6dde5565d" name="ReverseEngineered" type="text" multiple="false" hidden="true" value="StringLocalizerFactory" />
+                <tagged-value id="tv1c5fb93fff7944e9919c2ecc446c2134" name="SourceCodeGroup" type="reference" multiple="false" hidden="true" ref="pd4b0b29e6bbb4f709b71dffafca81e9f_145718825" />
+                <tagged-value id="tvf6926446295e40b591be7014452efce6" name="SourceCodePath" type="text" multiple="false" hidden="true" value="D:\Documents\ContributorPattern\menu_code.cs" />
+                <tagged-value id="tvd3ba7c635acf418d9c149faac581bcda" name="SourceCodeLanguage" type="text" multiple="false" hidden="true" value="CSharp" />
+                <tagged-value id="tve6e1b83171ad4dc08ade46afb159db50" name="SourceCodePosition" type="text" multiple="false" hidden="true" value="419" />
+                <tagged-value id="tv9ad13d6082f642088724357b259d2250" name="SourceCodeLength" type="text" multiple="false" hidden="true" value="55" />
+                <tagged-value id="tvf899a72f13a94f818eeb3e08fbcad9fd" name="SourceCodeFileSize" type="text" multiple="false" hidden="true" value="974" />
+                <tagged-value id="tvc8ba66b1800c445e9d598e2c6238ee11" name="SourceCodeFileChangeDate" type="text" multiple="false" hidden="true" value="04/18/2024 12:18:13" />
+              </tagged-values>
+              <stereotype-instances>
+                <stereotype id="7a006f1e54b040d389469f0b0787409a_property_c" type="property" creation-date="04/18/2024 15:18:56" ref="" />
+              </stereotype-instances>
+              <structural-feature type="IStringLocalizerFactory" type-id="IStringLocalizerFactory" />
+              <previous-state>
+                <item id="e0d43ecaad824ad2b2d7897f39882d19" veid="7a006f1e54b040d389469f0b0787409a" cid="PROP003" type="property" name="StringLocalizerFactory" creation-date="04/18/2024 15:18:56" visibility="undefined">
+                  <stereotypes>
+                    <stereotype name="property" />
+                  </stereotypes>
+                  <tagged-values>
+                    <tagged-value id="923aa1db66674af3aab3d8b5b67b0c5c" veid="tvc43557eb052a41b9aa248bd6dde5565d" name="ReverseEngineered" type="text" multiple="false" hidden="true" value="StringLocalizerFactory" />
+                    <tagged-value id="9ee00a36546f449982da470bed977b67" veid="tv1c5fb93fff7944e9919c2ecc446c2134" name="SourceCodeGroup" type="reference" multiple="false" hidden="true" ref="97fa2fc6c05b4d579c76742aca29a3bf" />
+                    <tagged-value id="73c434f9e1e0403bb2f2d5c20d8a6898" veid="tvf6926446295e40b591be7014452efce6" name="SourceCodePath" type="text" multiple="false" hidden="true" value="D:\Documents\ContributorPattern\menu_code.cs" />
+                    <tagged-value id="e53901d7746a41f6a1845e51a85e1001" veid="tvd3ba7c635acf418d9c149faac581bcda" name="SourceCodeLanguage" type="text" multiple="false" hidden="true" value="CSharp" />
+                    <tagged-value id="429552f48e6043b6b2c5c8e006fd8756" veid="tve6e1b83171ad4dc08ade46afb159db50" name="SourceCodePosition" type="text" multiple="false" hidden="true" value="419" />
+                    <tagged-value id="23bb6a8fb5e8454c898bc071049c9994" veid="tv9ad13d6082f642088724357b259d2250" name="SourceCodeLength" type="text" multiple="false" hidden="true" value="55" />
+                    <tagged-value id="3c69d715f583471181a851ffb4918b0c" veid="tvf899a72f13a94f818eeb3e08fbcad9fd" name="SourceCodeFileSize" type="text" multiple="false" hidden="true" value="974" />
+                    <tagged-value id="1e5b0fb8e2dc46c097739a8d5ce84d95" veid="tvc8ba66b1800c445e9d598e2c6238ee11" name="SourceCodeFileChangeDate" type="text" multiple="false" hidden="true" value="04/18/2024 12:18:13" />
+                  </tagged-values>
+                  <stereotype-instances>
+                    <stereotype id="032aaa4d051c421d8c255443259ac93e" veid="7a006f1e54b040d389469f0b0787409a_property_c" type="property" creation-date="04/18/2024 15:18:56" ref="" />
+                  </stereotype-instances>
+                  <structural-feature type="IStringLocalizerFactory" type-id="IStringLocalizerFactory" />
+                </item>
+              </previous-state>
+            </item>
+            <item id="23476c3d788f4cbd92f65ccab5af663d" cid="PROP002" type="property" name="ComponentModel" owner="ddc998ca4f604a04b05b40792c9efee0" creation-date="04/18/2024 13:28:26" visibility="public">
+              <tagged-values>
+                <tagged-value id="tv3a399548aaa04a16aacfe0432119e60d" name="ReverseEngineered" type="text" multiple="false" hidden="true" value="InputData" />
+                <tagged-value id="tv34487fb89bbb47e3949b740440e7c421" name="SourceCodeGroup" type="reference" multiple="false" hidden="true" ref="pd4b0b29e6bbb4f709b71dffafca81e9f_145718825" />
+                <tagged-value id="tvdd2eaebdc9b346ca968a317731bc23a6" name="SourceCodePath" type="text" multiple="false" hidden="true" value="D:\Documents\ContributorPattern\code.cs" />
+                <tagged-value id="tv33b57b110422475da83354714f8fe579" name="SourceCodeLanguage" type="text" multiple="false" hidden="true" value="CSharp" />
+                <tagged-value id="tv52f98439fc574e91963eda2861f7a959" name="SourceCodePosition" type="text" multiple="false" hidden="true" value="488" />
+                <tagged-value id="tvdb5e994ad04a431ca9b4288fcbb4a89b" name="SourceCodeLength" type="text" multiple="false" hidden="true" value="40" />
+                <tagged-value id="tv9de5e80f16cf4efcbc859f185161d243" name="SourceCodeFileSize" type="text" multiple="false" hidden="true" value="2034" />
+                <tagged-value id="tvd9bba75110aa414ca602c7d98782f67f" name="SourceCodeFileChangeDate" type="text" multiple="false" hidden="true" value="04/18/2024 10:19:10" />
+              </tagged-values>
+              <structural-feature type="ComponentModel" type-id="ComponentModel" />
+            </item>
+            <item id="b50a9e7637944fa2b96aecc81d5aa5bc" cid="PROP005" type="property" name="MainMenuNames" owner="46c125d5233844bc8c0ab4cc00bc3292" change-tracking-state="changed" creation-date="04/18/2024 15:18:56" visibility="public">
+              <stereotypes>
+                <stereotype name="property" />
+              </stereotypes>
+              <tagged-values>
+                <tagged-value id="tvace98e1cd5e04430a480ed719a4b270b" name="ReverseEngineered" type="text" multiple="false" hidden="true" value="MainMenuNames" />
+                <tagged-value id="tv772eb67c85c04005931b38abea293dd7" name="SourceCodeGroup" type="reference" multiple="false" hidden="true" ref="pd4b0b29e6bbb4f709b71dffafca81e9f_145718825" />
+                <tagged-value id="tvddafb8a8021541f891b343df68cb9b1f" name="SourceCodePath" type="text" multiple="false" hidden="true" value="D:\Documents\ContributorPattern\menu_code.cs" />
+                <tagged-value id="tv492ba80f4a904df5ade6cccaaa31920a" name="SourceCodeLanguage" type="text" multiple="false" hidden="true" value="CSharp" />
+                <tagged-value id="tvfaaa249021384f618399ed3a13f746ef" name="SourceCodePosition" type="text" multiple="false" hidden="true" value="707" />
+                <tagged-value id="tvb9a223aca48b495caa3aa2480b8ad089" name="SourceCodeLength" type="text" multiple="false" hidden="true" value="42" />
+                <tagged-value id="tv2314ba87d074483482fec7e6192888f8" name="SourceCodeFileSize" type="text" multiple="false" hidden="true" value="974" />
+                <tagged-value id="tv25440919d54d4bfea6a77ff3dd3b521e" name="SourceCodeFileChangeDate" type="text" multiple="false" hidden="true" value="04/18/2024 12:18:13" />
+              </tagged-values>
+              <documentations>
+                <doc id="85d41135638c4c09976016b454df3737">
+                  <text>
+                    <default>
+                      <style font-name="Verdana" font-size="12">
+                        <text>
+                          <solid-brush color="#FF000000" />
+                        </text>
+                      </style>
+                    </default>
+                    <styles />
+                    <content>
+                      <paragraph>
+                        <style />
+                        <p>
+                          <t> </t>
+                        </p>
+                        <p>
+                          <t> Includes the </t>
+                        </p>
+                        <p>
+                          <t> by default.
+</t>
+                        </p>
+                      </paragraph>
+                      <paragraph>
+                        <style />
+                        <p>
+                          <t> 
+</t>
+                        </p>
+                      </paragraph>
+                    </content>
+                  </text>
+                </doc>
+              </documentations>
+              <stereotype-instances>
+                <stereotype id="b50a9e7637944fa2b96aecc81d5aa5bc_property_c" type="property" creation-date="04/18/2024 15:18:56" ref="" />
+              </stereotype-instances>
+              <structural-feature type="List&lt;string&gt;" type-id="CSharp.List_CSharp.string" />
+              <previous-state>
+                <item id="295f88a705c94a48b4b91d767813f801" veid="b50a9e7637944fa2b96aecc81d5aa5bc" cid="PROP005" type="property" name="MainMenuNames" creation-date="04/18/2024 15:18:56" visibility="public">
+                  <stereotypes>
+                    <stereotype name="property" />
+                  </stereotypes>
+                  <tagged-values>
+                    <tagged-value id="f7596017bbae4a848ef191eedc19a1aa" veid="tvace98e1cd5e04430a480ed719a4b270b" name="ReverseEngineered" type="text" multiple="false" hidden="true" value="MainMenuNames" />
+                    <tagged-value id="515d6bf5190b4ba690887b55d340f11c" veid="tv772eb67c85c04005931b38abea293dd7" name="SourceCodeGroup" type="reference" multiple="false" hidden="true" ref="80bd15b872cd4fc29635b0e2f4885c53" />
+                    <tagged-value id="b34513a6436444a997afaead9ac207ed" veid="tvddafb8a8021541f891b343df68cb9b1f" name="SourceCodePath" type="text" multiple="false" hidden="true" value="D:\Documents\ContributorPattern\menu_code.cs" />
+                    <tagged-value id="fd3edd14d77742b29225915da13963e9" veid="tv492ba80f4a904df5ade6cccaaa31920a" name="SourceCodeLanguage" type="text" multiple="false" hidden="true" value="CSharp" />
+                    <tagged-value id="0f955f4b48ed45cfa4343d84bd21dbd0" veid="tvfaaa249021384f618399ed3a13f746ef" name="SourceCodePosition" type="text" multiple="false" hidden="true" value="707" />
+                    <tagged-value id="b6cd54164f8d4a3a9a5c6d76f6bdd8b5" veid="tvb9a223aca48b495caa3aa2480b8ad089" name="SourceCodeLength" type="text" multiple="false" hidden="true" value="42" />
+                    <tagged-value id="42b078e84b4d4af99377ed200bfae33c" veid="tv2314ba87d074483482fec7e6192888f8" name="SourceCodeFileSize" type="text" multiple="false" hidden="true" value="974" />
+                    <tagged-value id="ef58817a3dc5478e9268efd20b547387" veid="tv25440919d54d4bfea6a77ff3dd3b521e" name="SourceCodeFileChangeDate" type="text" multiple="false" hidden="true" value="04/18/2024 12:18:13" />
+                  </tagged-values>
+                  <documentations>
+                    <doc id="f31c62907fbb4ed5bd20519108824b89">
+                      <text>
+                        <default>
+                          <style font-name="Verdana" font-size="12">
+                            <text>
+                              <solid-brush color="#FF000000" />
+                            </text>
+                          </style>
+                        </default>
+                        <styles />
+                        <content>
+                          <paragraph>
+                            <style />
+                            <p>
+                              <t> </t>
+                            </p>
+                            <p>
+                              <t> Includes the </t>
+                            </p>
+                            <p>
+                              <t> by default.
+</t>
+                            </p>
+                          </paragraph>
+                          <paragraph>
+                            <style />
+                            <p>
+                              <t> 
+</t>
+                            </p>
+                          </paragraph>
+                        </content>
+                      </text>
+                    </doc>
+                  </documentations>
+                  <stereotype-instances>
+                    <stereotype id="c720617a55cf486d876f6ee569beb21b" veid="b50a9e7637944fa2b96aecc81d5aa5bc_property_c" type="property" creation-date="04/18/2024 15:18:56" ref="" />
+                  </stereotype-instances>
+                  <structural-feature type="List&lt;string&gt;" type-id="CSharp.List_CSharp.string" />
+                </item>
+              </previous-state>
+            </item>
+            <item id="c8157174965b488ebbb77b1b994ae445" cid="PROP001" type="property" name="Menu" owner="572bd7da98284b8883f3a5dd65823a75" change-tracking-state="changed" creation-date="04/18/2024 15:18:56" visibility="undefined">
+              <stereotypes>
+                <stereotype name="property" />
+              </stereotypes>
+              <tagged-values>
+                <tagged-value id="tv2e65d34d938346d98321f85684bb1dd5" name="ReverseEngineered" type="text" multiple="false" hidden="true" value="Menu" />
+                <tagged-value id="tvcd5b8e4b7a2d4ac29a02714f62ec1921" name="SourceCodeGroup" type="reference" multiple="false" hidden="true" ref="pd4b0b29e6bbb4f709b71dffafca81e9f_145718825" />
+                <tagged-value id="tva43caa28646d47a9a6c170dfd05774c7" name="SourceCodePath" type="text" multiple="false" hidden="true" value="D:\Documents\ContributorPattern\menu_code.cs" />
+                <tagged-value id="tvd06449dc06254780a9a472686934a83b" name="SourceCodeLanguage" type="text" multiple="false" hidden="true" value="CSharp" />
+                <tagged-value id="tv6efdd3e1b84b4b50befb1987d9721542" name="SourceCodePosition" type="text" multiple="false" hidden="true" value="323" />
+                <tagged-value id="tv3b037f2118d3486f9ea338b61470ef7c" name="SourceCodeLength" type="text" multiple="false" hidden="true" value="29" />
+                <tagged-value id="tv10d61622bec64d1d86af2295f0bc98ab" name="SourceCodeFileSize" type="text" multiple="false" hidden="true" value="974" />
+                <tagged-value id="tv8842f4fbcd3a4434ad9459d35765720f" name="SourceCodeFileChangeDate" type="text" multiple="false" hidden="true" value="04/18/2024 12:18:13" />
+              </tagged-values>
+              <stereotype-instances>
+                <stereotype id="c8157174965b488ebbb77b1b994ae445_property_c" type="property" creation-date="04/18/2024 15:18:56" ref="" />
+              </stereotype-instances>
+              <structural-feature type="ApplicationMenu" type-id="ApplicationMenu" />
+              <previous-state>
+                <item id="26fecc0134dd436292ca3e81c0048bd3" veid="c8157174965b488ebbb77b1b994ae445" cid="PROP001" type="property" name="Menu" creation-date="04/18/2024 15:18:56" visibility="undefined">
+                  <stereotypes>
+                    <stereotype name="property" />
+                  </stereotypes>
+                  <tagged-values>
+                    <tagged-value id="1810cb92f3ad43b49cfbba0d3bca55ba" veid="tv2e65d34d938346d98321f85684bb1dd5" name="ReverseEngineered" type="text" multiple="false" hidden="true" value="Menu" />
+                    <tagged-value id="8ff32da8efcb483b8a078d0ac081089f" veid="tvcd5b8e4b7a2d4ac29a02714f62ec1921" name="SourceCodeGroup" type="reference" multiple="false" hidden="true" ref="9b082c0dd64d44ad8aed658ed853efe2" />
+                    <tagged-value id="2502f81fd0514921976825139abd86e4" veid="tva43caa28646d47a9a6c170dfd05774c7" name="SourceCodePath" type="text" multiple="false" hidden="true" value="D:\Documents\ContributorPattern\menu_code.cs" />
+                    <tagged-value id="51d8d56bbcae424eb58713fe4e4a0b56" veid="tvd06449dc06254780a9a472686934a83b" name="SourceCodeLanguage" type="text" multiple="false" hidden="true" value="CSharp" />
+                    <tagged-value id="aafd37b49fc94281964267d7574ae195" veid="tv6efdd3e1b84b4b50befb1987d9721542" name="SourceCodePosition" type="text" multiple="false" hidden="true" value="323" />
+                    <tagged-value id="fcc1d9cd323944ec8628027c6dd550df" veid="tv3b037f2118d3486f9ea338b61470ef7c" name="SourceCodeLength" type="text" multiple="false" hidden="true" value="29" />
+                    <tagged-value id="51150bb069674538b20ea3a9b69fea1a" veid="tv10d61622bec64d1d86af2295f0bc98ab" name="SourceCodeFileSize" type="text" multiple="false" hidden="true" value="974" />
+                    <tagged-value id="f6e34212382e4a88ad991706c739749f" veid="tv8842f4fbcd3a4434ad9459d35765720f" name="SourceCodeFileChangeDate" type="text" multiple="false" hidden="true" value="04/18/2024 12:18:13" />
+                  </tagged-values>
+                  <stereotype-instances>
+                    <stereotype id="b84f26ae1e6745eeb9073a0bf05a6175" veid="c8157174965b488ebbb77b1b994ae445_property_c" type="property" creation-date="04/18/2024 15:18:56" ref="" />
+                  </stereotype-instances>
+                  <structural-feature type="ApplicationMenu" type-id="ApplicationMenu" />
+                </item>
+              </previous-state>
+            </item>
+            <item id="2e0f38cced644a079c2605ee0aad0c25" cid="PROP003" type="property" name="Contributors" owner="e32cb5c12d4d4c73a7e3c5f360e52fbb" creation-date="04/18/2024 13:28:26" visibility="public">
+              <tagged-values>
+                <tagged-value id="tv71cf74073e8e43f894bffe7175ccac67" name="ReverseEngineered" type="text" multiple="false" hidden="true" value="Contributors" />
+                <tagged-value id="tv7869b66566914e90bd2efdeaa0e3e360" name="SourceCodeGroup" type="reference" multiple="false" hidden="true" ref="pd4b0b29e6bbb4f709b71dffafca81e9f_145718825" />
+                <tagged-value id="tv3dbaea8153a4419d9be92aeeebd6adae" name="SourceCodePath" type="text" multiple="false" hidden="true" value="D:\Documents\ContributorPattern\code.cs" />
+                <tagged-value id="tv7e1704e367a04b17899b7e95539120cf" name="SourceCodeLanguage" type="text" multiple="false" hidden="true" value="CSharp" />
+                <tagged-value id="tv6b168b15fe044c1a966c73aecbb876e8" name="SourceCodePosition" type="text" multiple="false" hidden="true" value="922" />
+                <tagged-value id="tvcb8c8fcffe304e9f957fe61484e8d977" name="SourceCodeLength" type="text" multiple="false" hidden="true" value="56" />
+                <tagged-value id="tv992ca93a41484d4d9a1badf69ea8c3e5" name="SourceCodeFileSize" type="text" multiple="false" hidden="true" value="2034" />
+                <tagged-value id="tv2c1d058595dc43d7901435b65866267c" name="SourceCodeFileChangeDate" type="text" multiple="false" hidden="true" value="04/18/2024 10:19:10" />
+              </tagged-values>
+              <structural-feature type="List&lt;IComponentContributor&gt;" type-id="List&lt;IComponentContributor&gt;" />
+            </item>
+            <item id="0978e1e01761422a80ea4b50defde834" cid="C003" type="class" name="ComponentContributorManager" creation-date="04/18/2024 13:28:26" visibility="public">
+              <tagged-values>
+                <tagged-value id="tv907df57e6ff5419298a87fc41845c036" name="namespace" type="text" multiple="false" hidden="false" value="" />
+                <tagged-value id="tv18a08fc1193d463c9b623b475a9e6d98" name="ReverseEngineered" type="text" multiple="false" hidden="true" value="ComponentContributorManager" />
+                <tagged-value id="tv5b70481367e2415e9cf54989ad23cb3c" name="SourceCodeGroup" type="reference" multiple="false" hidden="true" ref="pd4b0b29e6bbb4f709b71dffafca81e9f_145718825" />
+                <tagged-value id="tv3383b829126d481a8c5b5ae4892f31d6" name="SourceCodePath" type="text" multiple="false" hidden="true" value="D:\Documents\ContributorPattern\code.cs" />
+                <tagged-value id="tv114ce967a05c4ca09f0ef797d2c2847d" name="SourceCodeLanguage" type="text" multiple="false" hidden="true" value="CSharp" />
+                <tagged-value id="tv04db7993ecd547bfa4fb92f0f9b379d3" name="SourceCodePosition" type="text" multiple="false" hidden="true" value="1101" />
+                <tagged-value id="tv506fb1d2866d486198abcf6a4c3d1213" name="SourceCodeLength" type="text" multiple="false" hidden="true" value="933" />
+                <tagged-value id="tv0239973de7b641448c5b7795876eb0e0" name="SourceCodeFileSize" type="text" multiple="false" hidden="true" value="2034" />
+                <tagged-value id="tva690b33a53e54281b99c7cb04c3c960b" name="SourceCodeFileChangeDate" type="text" multiple="false" hidden="true" value="04/18/2024 10:19:10" />
+              </tagged-values>
+              <owned-items />
+              <attributes>
+                <attribute id="a7ff26937bcc34f78b0f9c87a38ed4400803" cid="PROP004" name="ServiceProvider" creation-date="04/18/2024 13:28:26" property-ref="413afa6277df4023ae00807b9e2baf48" />
+                <attribute id="a07ed95120a4e40bebe8a8e91d7300b06803" cid="PROP005" name="Options" creation-date="04/18/2024 13:28:26" property-ref="014513702b9e4c7c9abefb77dd481527" />
+              </attributes>
+              <operations>
+                <operation id="o6f1e69b116294b0b8970eb69ec56e3be803" cid="OP005" name="ConfigureAsync" creation-date="04/18/2024 13:28:26" type="ComponentContextBase" type-id="Class:ddc998ca4f604a04b05b40792c9efee0" visibility="private" virtual="true">
+                  <tagged-values>
+                    <tagged-value id="tvee5b05a1c163466f91b4963fd1a3a174" name="ReverseEngineered" type="text" multiple="false" hidden="true" value="ConfigureAsync" />
+                    <tagged-value id="tv9fa419d66ca6477295a9b7c767eb199d" name="SourceCodePath" type="text" multiple="false" hidden="true" value="D:\Documents\ContributorPattern\code.cs" />
+                    <tagged-value id="tva455c1a6522a46d0a3510346ba8a7f64" name="SourceCodeLanguage" type="text" multiple="false" hidden="true" value="CSharp" />
+                    <tagged-value id="tv86df6e0506c4421b964eba2459e66222" name="SourceCodePosition" type="text" multiple="false" hidden="true" value="1482" />
+                    <tagged-value id="tvc6b9093edca3474ca32f2b7f0a3a51b4" name="SourceCodeLength" type="text" multiple="false" hidden="true" value="549" />
+                  </tagged-values>
+                  <documentations>
+                    <doc id="048a381f6636409eaee89e3a9a6b537c">
+                      <text>
+                        <default>
+                          <style font-name="Verdana" font-size="12">
+                            <text>
+                              <solid-brush color="#FF000000" />
+                            </text>
+                          </style>
+                        </default>
+                        <styles />
+                        <content>
+                          <paragraph>
+                            <style />
+                            <p>
+                              <t> context.Normalize(); TODO: might be used to order contributors in groups or categories
+</t>
+                            </p>
+                          </paragraph>
+                        </content>
+                      </text>
+                    </doc>
+                  </documentations>
+                  <source-codes>
+                    <source-code language="CSharp">
+        var contributors = CachedAvailableContributors.GetOrAdd(nameof(SettingPageContributorManager), await GetAvailableContributorsInternalAsync());
+        var context = new ComponentContextBase(ServiceProvider);
+        foreach (var contributor in contributors)
+        {
+            await contributor.ConfigureAsync(context);
+        }
+                                                                                                 
+        return context;
+    </source-code>
+                  </source-codes>
+                </operation>
+                <operation id="oe769a073f1004365b881c889a552da80833" cid="OP003" name="GetComponentModel" creation-date="04/18/2024 15:30:56" type="ComponentModel" type-id="ComponentModel" visibility="public" />
+              </operations>
+            </item>
+            <item id="e32cb5c12d4d4c73a7e3c5f360e52fbb" cid="C002" type="class" name="ComponentOptions" creation-date="04/18/2024 13:28:26" visibility="public">
+              <tagged-values>
+                <tagged-value id="tveffda5ec2ccb413b828576715d4a7c11" name="namespace" type="text" multiple="false" hidden="false" value="" />
+                <tagged-value id="tv45ea7cfaad664fd0bec6fbf8c1d37c11" name="ReverseEngineered" type="text" multiple="false" hidden="true" value="ComponentOptions" />
+                <tagged-value id="tv0667c343c04442b5816467cfe6a56a61" name="SourceCodeGroup" type="reference" multiple="false" hidden="true" ref="pd4b0b29e6bbb4f709b71dffafca81e9f_145718825" />
+                <tagged-value id="tv15eb4aa02f43446cab63c171fee8be83" name="SourceCodePath" type="text" multiple="false" hidden="true" value="D:\Documents\ContributorPattern\code.cs" />
+                <tagged-value id="tv7daaaedfaf264cda86b3f91fee9fe48c" name="SourceCodeLanguage" type="text" multiple="false" hidden="true" value="CSharp" />
+                <tagged-value id="tv012c224d247c44ea94bdf4261dbec0b2" name="SourceCodePosition" type="text" multiple="false" hidden="true" value="884" />
+                <tagged-value id="tvfef69a71bb7e4329b297f7698732d88a" name="SourceCodeLength" type="text" multiple="false" hidden="true" value="213" />
+                <tagged-value id="tv79c8e7d9329e4a8ea69bc16423e2cb46" name="SourceCodeFileSize" type="text" multiple="false" hidden="true" value="2034" />
+                <tagged-value id="tv8b0d3b0838634488a252ef4dcb6445d4" name="SourceCodeFileChangeDate" type="text" multiple="false" hidden="true" value="04/18/2024 10:19:10" />
+              </tagged-values>
+              <owned-items />
+              <attributes>
+                <attribute id="ada65deeefc3d4f8f8960ef139cfeecf3801" cid="PROP003" name="Contributors" creation-date="04/18/2024 13:28:26" property-ref="2e0f38cced644a079c2605ee0aad0c25" />
+              </attributes>
+              <operations>
+                <operation id="o9dcab2e08b9e44abbfe7eff4975a7b90803" cid="OP003" name="ComponentOptions" creation-date="04/18/2024 13:28:26" type="" type-id="" visibility="public">
+                  <stereotypes>
+                    <stereotype>constructor</stereotype>
+                  </stereotypes>
+                  <tagged-values>
+                    <tagged-value id="tva68ac2d8d48f4c3e812bbd324d5309ae" name="ReverseEngineered" type="text" multiple="false" hidden="true" value="ManageMaterialsPageOptions" />
+                    <tagged-value id="tvc9006b772d83470eae21d194eaea7e5f" name="SourceCodePath" type="text" multiple="false" hidden="true" value="D:\Documents\ContributorPattern\code.cs" />
+                    <tagged-value id="tv0af5367f770e463cb0c839f0de157d04" name="SourceCodeLanguage" type="text" multiple="false" hidden="true" value="CSharp" />
+                    <tagged-value id="tv999201f9e41a4c67ae6c2521f2c0d1de" name="SourceCodePosition" type="text" multiple="false" hidden="true" value="986" />
+                    <tagged-value id="tv1d3ae8a401d8473a90a6ff2c9415614e" name="SourceCodeLength" type="text" multiple="false" hidden="true" value="108" />
+                  </tagged-values>
+                </operation>
+              </operations>
+            </item>
+            <item id="014513702b9e4c7c9abefb77dd481527" cid="PROP005" type="property" name="Options" owner="0978e1e01761422a80ea4b50defde834" creation-date="04/18/2024 13:28:26" visibility="protected">
+              <tagged-values>
+                <tagged-value id="tvba940540ac2143f188b9124f50b799f4" name="ReverseEngineered" type="text" multiple="false" hidden="true" value="Options" />
+                <tagged-value id="tvfeaca7af59a64def955f7e6cbcb5f475" name="SourceCodeGroup" type="reference" multiple="false" hidden="true" ref="pd4b0b29e6bbb4f709b71dffafca81e9f_145718825" />
+                <tagged-value id="tvec9a38340fc44441941332a941eb9aee" name="SourceCodePath" type="text" multiple="false" hidden="true" value="D:\Documents\ContributorPattern\code.cs" />
+                <tagged-value id="tv994cd16a41fd4a8abc3a588441eb0124" name="SourceCodeLanguage" type="text" multiple="false" hidden="true" value="CSharp" />
+                <tagged-value id="tv0cb161b2c25a49479a52fa5ee421d6e1" name="SourceCodePosition" type="text" multiple="false" hidden="true" value="1227" />
+                <tagged-value id="tv3fdfc8eaeb1b4fdab79b9e878c1d7100" name="SourceCodeLength" type="text" multiple="false" hidden="true" value="43" />
+                <tagged-value id="tvbd0411bb1b814507b0b469a601baf816" name="SourceCodeFileSize" type="text" multiple="false" hidden="true" value="2034" />
+                <tagged-value id="tva59ed237a7ec4589986c079eb68606f4" name="SourceCodeFileChangeDate" type="text" multiple="false" hidden="true" value="04/18/2024 10:19:10" />
+              </tagged-values>
+              <structural-feature type="ComponentOptions" type-id="Class:e32cb5c12d4d4c73a7e3c5f360e52fbb" />
+            </item>
+            <item id="413afa6277df4023ae00807b9e2baf48" cid="PROP004" type="property" name="ServiceProvider" owner="0978e1e01761422a80ea4b50defde834" creation-date="04/18/2024 13:28:26" visibility="protected">
+              <tagged-values>
+                <tagged-value id="tv4653a53257e748f4a6b90b614178289c" name="ReverseEngineered" type="text" multiple="false" hidden="true" value="ServiceProvider" />
+                <tagged-value id="tv75e44e18da3f441d905aad6fd8ad8a82" name="SourceCodeGroup" type="reference" multiple="false" hidden="true" ref="pd4b0b29e6bbb4f709b71dffafca81e9f_145718825" />
+                <tagged-value id="tvcb12f6fc6b704e42a482e4d26800d947" name="SourceCodePath" type="text" multiple="false" hidden="true" value="D:\Documents\ContributorPattern\code.cs" />
+                <tagged-value id="tva6a16f312b1546b5a45f048de4e4b733" name="SourceCodeLanguage" type="text" multiple="false" hidden="true" value="CSharp" />
+                <tagged-value id="tv9cab8de7d6a0415daf31f199531a39cc" name="SourceCodePosition" type="text" multiple="false" hidden="true" value="1170" />
+                <tagged-value id="tv71ddef84380441e6aba136709da385c0" name="SourceCodeLength" type="text" multiple="false" hidden="true" value="51" />
+                <tagged-value id="tv9be803047d25470cba3b41b10a53cbe0" name="SourceCodeFileSize" type="text" multiple="false" hidden="true" value="2034" />
+                <tagged-value id="tv630554c883704bb784be63dfbb154a0c" name="SourceCodeFileChangeDate" type="text" multiple="false" hidden="true" value="04/18/2024 10:19:10" />
+              </tagged-values>
+              <structural-feature type="IServiceProvider" type-id="IServiceProvider" />
+            </item>
+            <item id="ddc998ca4f604a04b05b40792c9efee0" cid="C001" type="class" name="ComponentContextBase" creation-date="04/18/2024 13:28:26" visibility="public">
+              <tagged-values>
+                <tagged-value id="tv8a50524f7aa6482f9c6c295bff73fad7" name="namespace" type="text" multiple="false" hidden="false" value="" />
+                <tagged-value id="tv30d3c9cd0b3d4791b1cd58242dc8bf35" name="ReverseEngineered" type="text" multiple="false" hidden="true" value="ComponentContextBase" />
+                <tagged-value id="tvbf51e0e87e534e97901ff5fd168f9f48" name="SourceCodeGroup" type="reference" multiple="false" hidden="true" ref="pd4b0b29e6bbb4f709b71dffafca81e9f_145718825" />
+                <tagged-value id="tv350a302e21884d1fbd03f1805b4084f7" name="SourceCodePath" type="text" multiple="false" hidden="true" value="D:\Documents\ContributorPattern\code.cs" />
+                <tagged-value id="tv75e34db544554a8ba1ce52e42460a382" name="SourceCodeLanguage" type="text" multiple="false" hidden="true" value="CSharp" />
+                <tagged-value id="tv35ed1b4e327b4e22882425ba61f4ce1d" name="SourceCodePosition" type="text" multiple="false" hidden="true" value="189" />
+                <tagged-value id="tva5a80e99d5e64285a884da63bbe98067" name="SourceCodeLength" type="text" multiple="false" hidden="true" value="342" />
+                <tagged-value id="tv1006ace3d8ea43d6842870f3fa4c3929" name="SourceCodeFileSize" type="text" multiple="false" hidden="true" value="2034" />
+                <tagged-value id="tv36be24b5323d43aa8f899798dc9f53c4" name="SourceCodeFileChangeDate" type="text" multiple="false" hidden="true" value="04/18/2024 10:19:10" />
+              </tagged-values>
+              <documentations>
+                <doc id="c3009dcf71bb4216a9e62e0c3c4505d6">
+                  <text>
+                    <default>
+                      <style font-name="Verdana" font-size="12">
+                        <text>
+                          <solid-brush color="#FF000000" />
+                        </text>
+                      </style>
+                    </default>
+                    <styles />
+                    <content>
+                      <paragraph>
+                        <style />
+                        <p>
+                          <t>/*********************************************/
+</t>
+                        </p>
+                      </paragraph>
+                      <paragraph>
+                        <style />
+                        <p>
+                          <t>/** 
+</t>
+                        </p>
+                      </paragraph>
+                      <paragraph>
+                        <style />
+                        <p>
+                          <t> * The main entity in the contributer patterns, all contributers are adding thier contribution the
+</t>
+                        </p>
+                      </paragraph>
+                      <paragraph>
+                        <style />
+                        <p>
+                          <t> * PageCreationContext 
+</t>
+                        </p>
+                      </paragraph>
+                      <paragraph>
+                        <style />
+                        <p>
+                          <t> */
+</t>
+                        </p>
+                      </paragraph>
+                    </content>
+                  </text>
+                </doc>
+              </documentations>
+              <owned-items />
+              <attributes>
+                <attribute id="a63b762510e8b4dc0b7652769021487d6798" cid="PROP001" name="ServiceProvider" creation-date="04/18/2024 13:28:26" property-ref="8aebe0baaf9b4da3a0fc8e048b049b8a" />
+                <attribute id="a6785ee6773844e6a90d4193ca601a026799" cid="PROP002" name="ComponentModel" creation-date="04/18/2024 13:28:26" property-ref="23476c3d788f4cbd92f65ccab5af663d" />
+              </attributes>
+              <operations>
+                <operation id="odf0f587d1624403db7c3e08996eb6b8e789" cid="OP001" name="ComponentContextBase" creation-date="04/18/2024 13:28:26" type="" type-id="" visibility="public">
+                  <parameters>
+                    <parameter id="p0540f979bd0144288793905b1c58b7ff" name="serviceProvider" type="IServiceProvider" type-id="IServiceProvider" creation-date="04/18/2024 13:28:26" />
+                  </parameters>
+                  <stereotypes>
+                    <stereotype>constructor</stereotype>
+                  </stereotypes>
+                  <tagged-values>
+                    <tagged-value id="tvb999016162f64d5697411195f8f6c946" name="ReverseEngineered" type="text" multiple="false" hidden="true" value="ComponentContextBase" />
+                    <tagged-value id="tv73c7eb73cdda419285b0589360acfd21" name="SourceCodePath" type="text" multiple="false" hidden="true" value="D:\Documents\ContributorPattern\code.cs" />
+                    <tagged-value id="tv4307ca0c6b8f4f8cbb36f5a622db1cd9" name="SourceCodeLanguage" type="text" multiple="false" hidden="true" value="CSharp" />
+                    <tagged-value id="tvf418edbcb4a44aa2a4a40f90d34f68a0" name="SourceCodePosition" type="text" multiple="false" hidden="true" value="258" />
+                    <tagged-value id="tv3297f4004bc84090afcd68eb8d63954d" name="SourceCodeLength" type="text" multiple="false" hidden="true" value="168" />
+                  </tagged-values>
+                </operation>
+              </operations>
+            </item>
+            <item id="318a198f21634a7d8eef6d8956b18443" cid="REL001" type="relationship" creation-date="04/18/2024 13:28:26" from="0978e1e01761422a80ea4b50defde834" to="e32cb5c12d4d4c73a7e3c5f360e52fbb" visibility="package">
+              <tagged-values>
+                <tagged-value id="tvff7aaa1bf3704fd5b381e38f224d77dd" name="ReverseEngineered" type="text" multiple="false" hidden="true" value="" />
+              </tagged-values>
+              <relation from="0978e1e01761422a80ea4b50defde834" to="e32cb5c12d4d4c73a7e3c5f360e52fbb" derived="false">
+                <start-role id="umlar-72b07900-7641-42d7-82aa-76272e233cdf" name="" navigability="" association-type="composition" visibility="private" />
+                <end-role id="umlar-c20cf31c-23aa-4631-aae3-ae2fc701ad2f" name="" navigability="" association-type="association" visibility="private" />
+              </relation>
+            </item>
+            <item id="6ff5b4f91253417fa57b04a8372f5f1b" cid="I001" type="uml-interface-classifier" name="IComponentContributor" creation-date="04/18/2024 13:28:26" visibility="public">
+              <stereotypes>
+                <stereotype name="interface" />
+              </stereotypes>
+              <tagged-values>
+                <tagged-value id="tvcd4c5bc032d44e1a87cef03e5e2b2ba9" name="namespace" type="text" multiple="false" hidden="false" value="" />
+                <tagged-value id="tv74561b7ce7414af0a6334d0ffd57a6c1" name="ReverseEngineered" type="text" multiple="false" hidden="true" value="IComponentContributer" />
+                <tagged-value id="tvdef1a97403814e61b2970529665db54e" name="SourceCodeGroup" type="reference" multiple="false" hidden="true" ref="pd4b0b29e6bbb4f709b71dffafca81e9f_145718825" />
+                <tagged-value id="tvf6c5e57f3d88467e83f2ff796b8dab21" name="SourceCodePath" type="text" multiple="false" hidden="true" value="D:\Documents\ContributorPattern\code.cs" />
+                <tagged-value id="tve7faf765aa3f42b2860feb3112a004e2" name="SourceCodeLanguage" type="text" multiple="false" hidden="true" value="CSharp" />
+                <tagged-value id="tva5996de86a41423b97399e22d1250e55" name="SourceCodePosition" type="text" multiple="false" hidden="true" value="537" />
+                <tagged-value id="tva7567ba5c62a4deabf6f1999f21597a8" name="SourceCodeLength" type="text" multiple="false" hidden="true" value="100" />
+                <tagged-value id="tvc860e1258a0045a7ac78929700629d60" name="SourceCodeFileSize" type="text" multiple="false" hidden="true" value="2034" />
+                <tagged-value id="tv843ebc52941945c7868ccdd24808aa4a" name="SourceCodeFileChangeDate" type="text" multiple="false" hidden="true" value="04/18/2024 10:19:10" />
+              </tagged-values>
+              <stereotype-instances>
+                <stereotype id="6ff5b4f91253417fa57b04a8372f5f1b_interface_c" type="interface" creation-date="04/18/2024 13:28:26" ref="" />
+              </stereotype-instances>
+              <operations>
+                <operation id="o9910d2d2f1bc4a4ea682cfac0ab5241a800" cid="OP002" name="ConfigureAsync" creation-date="04/18/2024 13:28:26" type="Task" type-id="Task" visibility="undefined">
+                  <parameters>
+                    <parameter id="p410dfcdcdea74fbbb9e9f98a818576be" name="context" type="ComponentContextBase" type-id="ComponentContextBase" creation-date="04/18/2024 13:28:26" />
+                  </parameters>
+                  <tagged-values>
+                    <tagged-value id="tv96611b472ca349528ba7ac4b2128c54e" name="ReverseEngineered" type="text" multiple="false" hidden="true" value="ConfigureAsync" />
+                    <tagged-value id="tv335991555b6e44eabe19c00d68c0b5e2" name="SourceCodePath" type="text" multiple="false" hidden="true" value="D:\Documents\ContributorPattern\code.cs" />
+                    <tagged-value id="tvfe92a2b1d6504b708776e189c9e2c4e9" name="SourceCodeLanguage" type="text" multiple="false" hidden="true" value="CSharp" />
+                    <tagged-value id="tv3f42b92e96254acf9074b2847e4675e3" name="SourceCodePosition" type="text" multiple="false" hidden="true" value="584" />
+                    <tagged-value id="tv9e86bce49c4f424eb93119fc8adfa805" name="SourceCodeLength" type="text" multiple="false" hidden="true" value="50" />
+                  </tagged-values>
+                </operation>
+              </operations>
+            </item>
+          </abstract-items>
+          <sub-models />
+          <diagram type="uml-class" id="p2ec25f40fad94e3a8b285c6d2bcb539a_982430247" name="" order-index="1" uid="" name-style="" auto-routed-paths="false" default-line-style="default" namespace="" view-location="-154,-162" zoom="0.8">
+            <style>
+              <background-color index="1" color="#FFFFFFFF" />
+              <background-color index="2" color="#FFFFFFFF" />
+              <background-type type="vertical-linear" />
+            </style>
+            <meta>
+              <authors>
+                <author>Qais Alkhateeb</author>
+              </authors>
+              <description />
+              <creation-date>04/18/2024 13:28:26</creation-date>
+              <change-date>04/18/2024 15:19:54</change-date>
+              <revision-count>0</revision-count>
+              <version />
+            </meta>
+            <tagged-values>
+              <tagged-value id="tv2b85ffce3ec343f89f04cc44d6711f39" name="ReverseEngineered" type="text" multiple="false" hidden="true" value="" />
+            </tagged-values>
+            <abstract-items>
+              <item id="ec854b845f9145a089725567f9a74d8c" cid="CON003" type="constraint" creator="" creation-date="04/18/2024 13:43:19">
+                <style style-name="Default" shadow-type="smooth" shadow-offset="2,2" shadow-visible="true" shadow-color="#3A555555" shadow-radius="8" wrap-name-text="true" wrap-other-text="true" padding="2" margin="1" glow-color="#FFFFFF" accuracy="0.9">
+                  <text-style type="name" color="#555555" font="Segoe UI;11.25;B" />
+                  <text-style type="part-header" color="#1E1E1E" font="Verdana;9;I" />
+                  <text-style type="text" color="#555555" font="Segoe UI;9.75;" horizontal-alignment="left" />
+                  <text-style type="tagged-value" color="#555555" font="Segoe UI;9.75;" />
+                  <text-style type="stereotype" color="#555555" font="Segoe UI;9;I" />
+                  <background type="solid" colors="#F7D37E,#F2F2F2" />
+                  <border color="#555555" width="2" />
+                  <label-connector color="#80000000" dash-style="Dash" />
+                  <alternate-styles>
+                    <alternate-style style-name="Alternate" shadow-type="smooth" shadow-offset="2,2" shadow-visible="true" shadow-color="#322A2A2A" shadow-radius="8" wrap-name-text="true" wrap-other-text="true" padding="2" margin="1" glow-color="#FFFFFF" accuracy="0.9">
+                      <text-style type="name" color="#E9E9E9" font="Segoe UI;11.25;B" />
+                      <text-style type="part-header" color="#1E1E1E" font="Verdana;9;I" />
+                      <text-style type="text" color="#E9E9E9" font="Segoe UI;9.75;" horizontal-alignment="left" />
+                      <text-style type="tagged-value" color="#E9E9E9" font="Segoe UI;9.75;" />
+                      <text-style type="stereotype" color="#E9E9E9" font="Segoe UI;9;I" />
+                      <background type="solid" colors="#F7D37E,#203D85" />
+                      <border color="#203D85" width="2" />
+                      <label-connector color="#80000000" dash-style="Dash" />
+                    </alternate-style>
+                  </alternate-styles>
+                </style>
+                <constraint>Create</constraint>
+              </item>
+              <item id="a90db222b24c4da5858904d2af1f5218" cid="C004" type="class" name="Component" creator="" creation-date="04/18/2024 13:52:47">
+                <operations>
+                  <operation id="o26bb86fe567340d395008ff1112d7820319" cid="OP001" name="Execute" creation-date="04/18/2024 13:53:01" type="" type-id="" visibility="public">
+                    <parameters>
+                      <parameter id="pd24e38c685ee41d38b3a2a4ab0542544" name="ComponentContextBase" type="" type-id="" creation-date="04/18/2024 13:53:23" />
+                    </parameters>
+                  </operation>
+                </operations>
+              </item>
+              <item id="18d2315344a1480e9d112aebcf458dce" cid="ELEM002" type="universal-connector" creator="" creation-date="04/18/2024 13:38:26" from="0978e1e01761422a80ea4b50defde834" to="ddc998ca4f604a04b05b40792c9efee0">
+                <style style-name="Flat Yellow" shadow-type="smooth" shadow-offset="2,2" shadow-visible="true" shadow-color="#322A2A2A" shadow-radius="8" wrap-name-text="true" wrap-other-text="true" padding="2" margin="1" glow-color="#FFFFFF" accuracy="0.9">
+                  <text-style type="name" color="#000000" font="Segoe UI;11.25;B" />
+                  <text-style type="part-header" color="#000000" font="Verdana;9;I" />
+                  <text-style type="text" color="#000000" font="Segoe UI;9.75;" horizontal-alignment="left" />
+                  <text-style type="tagged-value" color="#000000" font="Segoe UI;9.75;" />
+                  <text-style type="stereotype" color="#000000" font="Segoe UI;9;I" />
+                  <background type="solid" colors="#F7D37E,#FBE8B3" />
+                  <border color="#D8B866" width="2" />
+                  <label-connector color="#80000000" dash-style="Dash" />
+                  <alternate-styles>
+                    <alternate-style style-name="Alternate" shadow-type="smooth" shadow-offset="2,2" shadow-visible="true" shadow-color="#322A2A2A" shadow-radius="8" wrap-name-text="true" wrap-other-text="true" padding="2" margin="1" glow-color="#FFFFFF" accuracy="0.9">
+                      <text-style type="name" color="#000000" font="Segoe UI;11.25;B" />
+                      <text-style type="part-header" color="#000000" font="Verdana;9;I" />
+                      <text-style type="text" color="#000000" font="Segoe UI;9.75;" horizontal-alignment="left" />
+                      <text-style type="tagged-value" color="#000000" font="Segoe UI;9.75;" />
+                      <text-style type="stereotype" color="#000000" font="Segoe UI;9;I" />
+                      <background type="solid" colors="#FCEDCB,#FDF6E1" />
+                      <border color="#EFE3C2" width="2" />
+                      <label-connector color="#80000000" dash-style="Dash" />
+                    </alternate-style>
+                  </alternate-styles>
+                </style>
+                <connector end-cap="arrow" />
+              </item>
+              <item id="28fe57d3db794798b56902911114f822" cid="DEP001" type="dependency" creator="" creation-date="04/18/2024 13:59:40" from="a90db222b24c4da5858904d2af1f5218" to="ddc998ca4f604a04b05b40792c9efee0" visibility="package">
+                <stereotypes>
+                  <stereotype name="use" />
+                </stereotypes>
+                <stereotype-instances>
+                  <stereotype id="28fe57d3db794798b56902911114f822_use_c" type="use" creation-date="04/18/2024 13:59:40" ref="" />
+                </stereotype-instances>
+              </item>
+              <item id="6e7463d40b504eba8c3ec747e151c600" cid="REL002" type="relationship" creator="" creation-date="04/18/2024 13:41:52" from="e32cb5c12d4d4c73a7e3c5f360e52fbb" to="6ff5b4f91253417fa57b04a8372f5f1b" visibility="package">
+                <owned-items />
+                <relation from="e32cb5c12d4d4c73a7e3c5f360e52fbb" to="6ff5b4f91253417fa57b04a8372f5f1b" derived="false">
+                  <start-role id="umlar-c4e79ebe-11a6-4807-9071-28ce01d7304b" name="" navigability="" association-type="composition" visibility="private" property-ref="960575f4e32d41c4a12d9e783c8572ee" />
+                  <end-role id="umlar-00a5436e-debc-44a8-9ac4-6370b5050f04" name="" navigability="" association-type="association" visibility="private" property-ref="68c15837483d49858bde2462fa74192d" />
+                </relation>
+              </item>
+            </abstract-items>
+            <layer id="aa11bb0c32024360a59824994cf9e315" name="Default" visible="true" enabled="true" locked="false">
+              <item id="6ff5b4f91253417fa57b04a8372f5f1b" iid="376b169986064e6680bd3ca945782c76" creation-date="04/18/2024 13:28:26" order-index="0" type="entity">
+                <layout ax="-7.6194153" ay="-146.41809" awidth="344" aheight="78" x="-7" y="-145.5" width="344" height="78" />
+                <classifier />
+                <class />
+              </item>
+              <item id="e32cb5c12d4d4c73a7e3c5f360e52fbb" iid="6f28151cdd194f649cba3ba8e0f09953" creation-date="04/18/2024 13:28:26" order-index="1" type="entity">
+                <layout ax="492.4902" ay="-147.33502" awidth="352" aheight="79" x="492.5" y="-146" width="352" height="79" />
+                <classifier />
+                <class />
+              </item>
+              <item id="0978e1e01761422a80ea4b50defde834" iid="4fc6075aa9af4bf4a397b01d55a2356b" creation-date="04/18/2024 13:28:26" order-index="3" type="entity">
+                <layout ax="529.5836" ay="-11.627014" awidth="278" aheight="138" x="529.5" y="-10" width="784" height="138" />
+                <classifier />
+                <class />
+              </item>
+              <item id="318a198f21634a7d8eef6d8956b18443" iid="a9d25dd30c654ce398b0d9ae269d5da2" creation-date="04/18/2024 13:28:26" order-index="2" type="relation">
+                <layout start-role-position="25,15" end-role-position="25,-15" start-multiplicity-position="25,-15" end-multiplicity-position="25,15" line-style="perpendicular" lock-to-fields="false" auto-path="" x1="669" y1="-12" x2="669" y2="-68" start-border-pos="0.125" end-border-pos="0.624933660030365" name-position="0,20">
+                  <points>
+                    <point x="669" y="-12" />
+                    <point x="669" y="-68" />
+                  </points>
+                </layout>
+                <relation from="0978e1e01761422a80ea4b50defde834" from-iid="4fc6075aa9af4bf4a397b01d55a2356b" to="e32cb5c12d4d4c73a7e3c5f360e52fbb" to-iid="6f28151cdd194f649cba3ba8e0f09953" />
+              </item>
+              <item id="ddc998ca4f604a04b05b40792c9efee0" iid="029bef32103b48d992794bc25b3f43cb" creation-date="04/18/2024 13:28:26" order-index="4" type="entity">
+                <layout ax="471.7554" ay="274.94263" awidth="359" aheight="116" x="472" y="278" width="558" height="116" />
+                <classifier />
+                <class />
+              </item>
+              <item id="18d2315344a1480e9d112aebcf458dce" iid="1bf522f7d8d74b0e92f47b91ed8a98a8" creation-date="04/18/2024 13:38:26" order-index="5" type="relation">
+                <layout line-style="oblique" lock-start-point="true" lock-end-point="true" lock-to-fields="false" auto-path="" x1="668" y1="126" x2="669" y2="275" start-border-pos="0.6254496425390244" end-border-pos="0.13709677755832672" start-local-pos="138.5" end-local-pos="306" name-position="0,20" name-width="151">
+                  <points>
+                    <point x="668" y="126" />
+                    <point x="669" y="275" />
+                  </points>
+                </layout>
+                <relation from="0978e1e01761422a80ea4b50defde834" from-iid="4fc6075aa9af4bf4a397b01d55a2356b" to="ddc998ca4f604a04b05b40792c9efee0" to-iid="029bef32103b48d992794bc25b3f43cb" />
+              </item>
+              <item id="6e7463d40b504eba8c3ec747e151c600" iid="f3269203a6b446568eb2b47c93e347f7" creation-date="04/18/2024 13:41:52" order-index="6" type="relation">
+                <layout start-role-position="25,15" end-role-position="25,-15" start-multiplicity-position="25,-15" end-multiplicity-position="25,15" line-style="oblique" lock-to-fields="false" auto-path="" x1="492" y1="-108" x2="336" y2="-107" start-border-pos="0.874417003197006" end-border-pos="0.375246219145946" name-position="0,20">
+                  <points>
+                    <point x="492" y="-108" />
+                    <point x="336" y="-107" />
+                  </points>
+                </layout>
+                <relation from="e32cb5c12d4d4c73a7e3c5f360e52fbb" from-iid="6f28151cdd194f649cba3ba8e0f09953" to="6ff5b4f91253417fa57b04a8372f5f1b" to-iid="376b169986064e6680bd3ca945782c76" />
+              </item>
+              <item id="ec854b845f9145a089725567f9a74d8c" iid="88c863a4212d43b39be03e683a8e12e8" creation-date="04/18/2024 13:43:19" order-index="9" type="entity">
+                <layout ax="628.6442" ay="170.86917" awidth="81" aheight="36" x="628" y="173" width="81" height="36" />
+              </item>
+              <item id="a90db222b24c4da5858904d2af1f5218" iid="85d4cacf18cd49ad99bc305a6d4735bc" show-fields="true" creation-date="04/18/2024 13:52:47" order-index="10" type="entity">
+                <layout ax="30.566437" ay="273.48944" awidth="234" aheight="123" x="32" y="274.5" width="234" height="123" />
+                <classifier />
+                <class />
+              </item>
+              <item id="28fe57d3db794798b56902911114f822" iid="0c263050302a431ab1c71a077b809f50" creation-date="04/18/2024 13:59:40" order-index="12" type="relation">
+                <layout line-style="oblique" lock-start-point="true" lock-end-point="true" lock-to-fields="false" auto-path="" x1="265" y1="335" x2="472" y2="333" start-border-pos="0.375" end-border-pos="0.875" start-local-pos="234" end-local-pos="58" name-position="0,20">
+                  <points>
+                    <point x="265" y="335" />
+                    <point x="472" y="333" />
+                  </points>
+                </layout>
+                <relation from="a90db222b24c4da5858904d2af1f5218" from-iid="85d4cacf18cd49ad99bc305a6d4735bc" to="ddc998ca4f604a04b05b40792c9efee0" to-iid="029bef32103b48d992794bc25b3f43cb" />
+              </item>
+            </layer>
+          </diagram>
+          <diagram type="uml-class" id="p9e2b99a8ae96440f8f9d04651698d599_165514679" name="MenuUML" order-index="2" overview-order-index="0" uid="" name-style="" auto-routed-paths="false" default-line-style="default" view-location="-484,-552" zoom="0.05">
+            <style>
+              <background-color index="1" color="#FFFFFFFF" />
+              <background-color index="2" color="#FFFFFFFF" />
+              <background-type type="solid" />
+            </style>
+            <meta>
+              <authors>
+                <author>Qais Alkhateeb</author>
+              </authors>
+              <description />
+              <creation-date>04/18/2024 15:18:29</creation-date>
+              <change-date>04/18/2024 15:24:34</change-date>
+              <revision-count>0</revision-count>
+              <version />
+            </meta>
+            <abstract-items />
+            <layer id="7139530ecc41429db7646861dc7a4ac0" name="Default" visible="true" enabled="true" locked="false" />
+          </diagram>
+          <mapping-definitions>
+            <mapping-definition id="pffb51b8a7ff445d5b9e3319e6bc49cd0_494839106" name="" order-index="0" creation-date="04/18/2024 15:07:31" />
+          </mapping-definitions>
+        </model>
+      </sub-models>
+    </model>
+  </models>
+</sim-project>
