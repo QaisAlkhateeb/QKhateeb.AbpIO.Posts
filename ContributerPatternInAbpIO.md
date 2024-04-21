@@ -1,10 +1,10 @@
 # Introduction
 
-Contributers pattern have beed used in multiple modules and packages of Abp framework (Toolbar Contributor, Tenant Resolver, Settings Page Contributer, Image Resizer Contributor)
+The Contributor pattern has been utilized in various modules and packages within the ABP framework, including Toolbar Contributor, Tenant Resolver, Settings Page Contributor, and Image Resizer Contributor.
 
-Contibutor pattern allow external modules to contributes on execute/render components in existing modules, the most common example is `IMenuContributor` [Navigation-Menu](https://docs.abp.io/en/abp/latest/UI/AspNetCore/Navigation-Menu).
+This pattern enables external modules to contribute to the execution or rendering of components within existing modules. A common example is the `IMenuContributor` for the [Navigation Menu](https://docs.abp.io/en/abp/latest/UI/AspNetCore/Navigation-Menu).
 
-The `AbpUiNavigationModule` allow external modules to contributes and add their navigation menus. this makes the UI Navigation centralized on the applicaton, open for extension and closed for modificatin   
+The `AbpUiNavigationModule` allows external modules to add their navigation menus, centralizing UI navigation in the application while being open for extension and closed for modification.
 
 ```cs
 using System.Threading.Tasks;
@@ -43,7 +43,10 @@ namespace MyProject.Web.Menus
     }
 }
 ```
+
+
 # Deep dive in Abp.io Contributer pattern:
+
 
 ## Definition
 The contributor pattern is used to allow various parts of an application to contribute or inject additional functionality into a core component without directly modifying it. in simple words it's an implementation for OC princeple.
@@ -336,9 +339,9 @@ Now we ready to use this on the `HostDashboard` page:
 ```
 
 
-# last notes (Personal preference)
+# Side Note (Personal Preference)
 
-Instead of consuming the *Component Context* directly like in the `SettingPageCreationContext` or consume the *Component Model* by injecting the *Contributor Manager* like in `MenuManager` or our last example `HostDashboardPageManager`, I prefer to create a consumer intefrace. By this hide the creation context details required for contributor from the consumers. and make this model immutable from the consumer side.
+Instead of directly consuming the *Component Context*, such as in the `SettingPageCreationContext`, or consuming the *Component Model* by injecting the *Contributor Manager* (e.g., `MenuManager` or `HostDashboardPageManager`), I prefer to create a consumer intefrace. this approach hide the creation context details required for contribution away from the consumers and ensures the model remains immutable from the consumer side.
 
 ```cs
 using System.Collections.Generic;
@@ -368,6 +371,6 @@ namespace Abp.ContributorPatternExample.Web.HostDashboardManagement
 
 # Summerize
 
-Contributor pattern can be a greate tool to implement extensibility in your modules, by applying Contributor Pattern you can offer a easy way to build rich components getting the benfites of other modules contributions. 
+The Contributor pattern is a powerful tool for implementing extensibility in your modules. By applying the Contributor Pattern, you can easily build rich, modular components that benefit from contributions from other modules.
 
 The link of the example source code [Source Code](https://github.com/QaisAlkhateeb/QKhateeb.AbpIO.Posts/tree/master/Example)
