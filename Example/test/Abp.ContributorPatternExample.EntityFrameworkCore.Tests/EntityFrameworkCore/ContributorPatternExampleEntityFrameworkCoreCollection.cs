@@ -1,0 +1,9 @@
+﻿using Xunit;
+
+namespace Abp.ContributorPatternExample.EntityFrameworkCore;
+
+[CollectionDefinition(ContributorPatternExampleTestConsts.CollectionDefinitionName)]
+public class ContributorPatternExampleEntityFrameworkCoreCollection : ICollectionFixture<ContributorPatternExampleEntityFrameworkCoreFixture>
+{
+
+}

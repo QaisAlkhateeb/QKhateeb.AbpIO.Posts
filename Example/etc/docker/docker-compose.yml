@@ -1,0 +1,73 @@
+version: '3.8'
+
+services:
+  contributorpatternexample-web:
+    image: abp/contributorpatternexample-web:latest
+    container_name: contributorpatternexample-web
+    hostname: contributorpatternexample-web
+    build:
+      context: ../../
+      dockerfile: src/Abp.ContributorPatternExample.Web/Dockerfile.local
+    environment:
+      - ASPNETCORE_URLS=https://+:443;http://+:80;
+      - Kestrel__Certificates__Default__Path=/root/certificate/localhost.pfx
+      - Kestrel__Certificates__Default__Password=036bd27a-4228-46d4-bf48-9e33555a4429
+      - App__SelfUrl=https://localhost:44353
+      - AuthServer__RequireHttpsMetadata=false
+      - AuthServer__Authority=http://contributorpatternexample-web
+      - App__HealthCheckUrl=http://contributorpatternexample-web/health-status      
+      - ConnectionStrings__Default=Data Source=sql-server;Initial Catalog=ContributorPatternExample;User Id=sa;Password=myPassw0rd;MultipleActiveResultSets=true;TrustServerCertificate=True;
+    ports:
+      - "44353:443"
+    restart: on-failure
+    volumes:
+      - ./certs:/root/certificate
+    networks:
+      - abp-network
+
+  
+
+  
+  db-migrator:
+    image: abp/contributorpatternexample-db-migrator:latest
+    container_name: db-migrator
+    build:
+      context: ../../
+      dockerfile: src/ContributorPatternExample.DbMigrator/Dockerfile.local
+    environment:
+      - OpenIddict__Applications__ContributorPatternExample_Web__RootUrl=https://localhost:44353
+      - OpenIddict__Applications__ContributorPatternExample_Swagger__RootUrl=https://localhost:44354      
+      - ConnectionStrings__Default=Data Source=sql-server;Initial Catalog=ContributorPatternExample;User Id=sa;Password=myPassw0rd;MultipleActiveResultSets=true;TrustServerCertificate=True;
+      - Redis__Configuration=redis
+    restart: on-failure
+    depends_on:
+      sql-server:
+        condition: service_healthy
+    networks:
+      - abp-network
+  
+  sql-server:
+    container_name: sql-server
+    image: mcr.microsoft.com/mssql/server:2019-latest
+    ports:
+      - "1434:1433"
+    environment:
+      SA_PASSWORD: "myPassw0rd"
+      ACCEPT_EULA: "Y"
+    volumes:
+      - sqldata:/var/opt/mssql
+    networks:
+      - abp-network
+    healthcheck:
+      test: /opt/mssql-tools/bin/sqlcmd -S sql-server -U sa -P "myPassw0rd" -Q "SELECT 1" -b -o /dev/null
+      interval: 10s
+      timeout: 3s
+      retries: 10
+      start_period: 10s
+volumes:
+  sqldata:
+    name: contributorpatternexample_sqldata
+networks:
+  abp-network:
+    name: contributorpatternexample-network
+    driver: bridge
